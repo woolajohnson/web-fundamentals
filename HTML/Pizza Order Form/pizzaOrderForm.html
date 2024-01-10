@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pizza Order Form</title>
+    </head>
+    <body>
+        <h1>Pizza Order Form</h1>
+        <form action="sample.php" method="post">
+            <label>
+                First Name:
+                <input type="text" name="firstName" id="firstName" />
+            </label>
+            <label>
+                Last Name:
+                <input type="text" name="lastName" id="lastName" />
+            </label>
+            <label>
+                Email Address:
+                <input type="text" name="email" id="email" />
+            </label>
+            <label>
+                Contact Number:
+                <input type="text" name="contact" id="contact" />
+            </label>
+            <label>
+                Preferred Delivery Date:
+                <input type="date" name="deliveryDate" id="deliveryDate" />
+            </label>
+            <p>Size:</p>
+            <label>
+                <input type="radio" name="size" id="small" value="small" />
+                Small
+            </label>
+            <label>
+                <input type="radio" name="size" id="medium" value="medium" />
+                Medium
+            </label>
+            <label>
+                <input type="radio" name="size" id="large" value="large" />
+                Large
+            </label>
+            <p>Flavor:</p>
+            <label>
+                <input type="checkbox" name="flavor" id="hawaiian" />
+                Hawaiian (Php 150.00)
+            </label>
+            <select name="firstOption" id="firstOption">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <label>
+                <input type="checkbox" name="flavor" id="pepperoni" />
+                Pepperoni (Php 140.00)
+            </label>
+            <select name="secondOption" id="secondOption">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <label>
+                <input type="checkbox" name="flavor" id="vegetable" />
+                Vegetable (Php 130.00)
+            </label>
+            <select name="thirdOption" id="thirdOption">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <label>
+                Credit Card Number:
+                <input
+                    type="text"
+                    name="creditCardNumber"
+                    id="creditCardNumber"
+                />
+            </label>
+            <label>
+                Pin:
+                <input type="password" name="pinNumber" id="pinNumber" />
+            </label>
+            <p>Additional Note:</p>
+            <textarea name="note" id="note" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Submit Order" />
+        </form>
+    </body>
+</html>

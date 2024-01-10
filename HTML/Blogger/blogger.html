@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="This is a blog for my favorite Anime of all time."
+        />
+        <title>My Favorite Anime: List</title>
+    </head>
+    <body>
+        <div>
+            <h1>My Favorite Anime Of All Time</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                aut praesentium inventore similique quaerat commodi libero
+                mollitia delectus cum ea quae natus corporis, ducimus,
+                voluptates debitis explicabo. Aspernatur quisquam necessitatibus
+                doloremque non alias modi quidem rem qui, iure officiis dolorem
+                at eligendi iusto. Eligendi reiciendis assumenda cumque nesciunt
+                consequuntur repellat ipsam quod illo, recusandae harum, hic
+                numquam mollitia soluta pariatur debitis eaque expedita
+                explicabo voluptas itaque repudiandae odit fugit, vel adipisci!
+                Quisquam, maiores molestiae! Corporis sapiente velit, expedita
+                quibusdam nesciunt similique itaque beatae? Dignissimos
+                architecto quia quis ut sed accusantium repellat officia, nam
+                illum omnis numquam commodi voluptate, explicabo ex. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Quam voluptates
+                dignissimos pariatur dolore eaque ab fugiat amet porro
+                perspiciatis cum nesciunt numquam culpa reprehenderit a aliquid,
+                officia ullam dicta explicabo rerum. Amet fugiat ea harum error
+                aut doloremque facere. Quos?
+            </p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Number of Season</th>
+                    <th>Author</th>
+                    <th>Official Website</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>One Punch Man</td>
+                    <td>2</td>
+                    <td>One Sensei</td>
+                    <td><a href="onepunchman.com">onepunchman.com</a></td>
+                </tr>
+                <tr>
+                    <td>That Time I Got Reincarnated as a Slime</td>
+                    <td>3</td>
+                    <td>Mitz Vah</td>
+                    <td><a href="slime.com">slime.com</a></td>
+                </tr>
+                <tr>
+                    <td>Slam Dunk</td>
+                    <td>1</td>
+                    <td>Takehiko Inoue</td>
+                    <td><a href="slamdunk.com">slamdunk.com</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <p>Special Mention:</p>
+            <ul>
+                <li>The Eminence in Shadow</li>
+                <li>Dragon Ball Z</li>
+                <li>One Piece</li>
+                <li>Naruto Syapaden</li>
+            </ul>
+        </div>
+
+        <p>Please take a short survey</p>
+        <form action="anime.php" method="post">
+            <label>
+                Name:
+                <input type="text" name="name" id="name" />
+            </label>
+            <label>
+                Email Address:
+                <input type="text" name="email" id="email" />
+            </label>
+            <label>
+                <input type="radio" name="newsletter" id="yes" value="yes" />
+                Yes, I would like to receive newsletter
+            </label>
+            <label>
+                <input type="radio" name="newsletter" id="no" value="no" /> No,
+                please do not send me newsletter
+            </label>
+            <p>Choose 1 to add on the Special Mention Category:</p>
+            <select name="select" id="select">
+                <option value="Demon Slayer">Demon Slayer</option>
+                <option value="Fairy Tail">Fairy Tail</option>
+                <option value="Bleach">Bleach</option>
+            </select>
+            <p>Things to consider in choosing the best Anime?</p>
+            <label>
+                <input type="checkbox" name="best" id="opmc" /> Op MC
+            </label>
+            <label>
+                <input type="checkbox" name="best" id="story" /> Nice Story
+            </label>
+            <label>
+                <input type="checkbox" name="best" id="waifu" /> Beautiful Waifu
+            </label>
+            <label>
+                <input type="checkbox" name="best" id="song" /> Good OST
+            </label>
+            <input type="submit" value="Submit Survey" />
+        </form>
+    </body>
+</html>

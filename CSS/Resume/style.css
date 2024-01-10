@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: #e1eafc;
+    background-image: radial-gradient(circle, #ffffff, #fdfdfe, #fafafc, #f7f8fb, #f4f6fa, #eff2f7, #e9edf3, #e4e9f0, #dbe2ea, #d3dbe5, #cad4df, #c1cdd9);
+    max-width: 700px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+    header {
+        min-height: 20vh;
+        padding: 30px 20px 20px 20px;
+    }
+
+        header img {
+            width: 200px;
+            display: inline-block;
+            margin-right: 25px;
+        }
+
+        header .name {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+            header .name h1 {
+                letter-spacing: 5px;
+                font-size: 40px;
+                margin-bottom: 5px;
+                color: #2d4767;
+            }
+
+            header .name h5 {
+                letter-spacing: 2.5px;
+            }
+
+            header .name p {
+                margin-top: 25px;
+                border-top: 2px solid #2d4767;
+            }
+
+            header .name span {
+                font-size: 40px;
+            }
+
+    main {
+        min-height: 60vh;
+    }
+
+        main .aboutMe {
+            background-color: #e5e5e5;
+            padding: 20px 25px;
+            margin: 0 20px;
+        }
+
+            main .aboutMe h3 {
+                text-align: center;
+                letter-spacing: 2.5px;
+            }
+
+            main .aboutMe p {
+                font-size: 17px;
+                line-height: 1.4;
+                text-align: justify;
+                margin-top: 15px;
+            }
+        
+        main .skills {
+            margin: 0 10px;
+        }
+
+            main .skills .technologies, main .skills .projects {
+                display: inline-block;
+                width: 49%;
+            }
+
+            main .skills .technologies {
+                vertical-align: top;
+                margin-top: 10px;
+            }
+
+                main .skills .technologies h3 {
+                    text-align: center;
+                    letter-spacing: 2.5px;
+                    padding-top: 20px;
+                }
+
+                main .skills .technologies .techImages {
+                    padding: 20px;
+                    vertical-align: top;
+                }
+                
+                    main .skills .technologies img {
+                        width: 50px;
+                        margin: 2px;
+                    }
+
+            main .skills .projects {
+                background-color: #a3a3a3;
+                background-image: radial-gradient(circle, #f4f4f4, #f6f6f6, #f8f8f8, #fafafa, #fcfcfc, #f8f8f8, #f4f4f4, #f0f0f0, #e5e5e5, #d9d9d9, #cecece, #c3c3c3);
+                padding: 15px 13px 0 25px;
+                margin-top: 20px;
+            }
+
+                main .skills .projects h3 {
+                    text-align: center;
+                    letter-spacing: 2.5px;
+                    margin-bottom: 25px;
+                }
+                
+                main .skills .projects ul {
+                    padding-left: 15px;
+                    margin-bottom: 15px;
+                }
+
+    footer {
+        text-align: center;
+        margin-top: 25px;
+        padding-bottom: 12px;
+    }
+
+        footer a {
+            padding: 0 3px;
+            color: black;
+        }
+
+        footer img {
+            width: 20px;
+            vertical-align: bottom;
+            margin-right: 2px;
+        }
