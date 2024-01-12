@@ -1,0 +1,59 @@
+// Variables
+@container_background_color: #ffd9b7;
+@margin_bottom: 20px;
+@inblock: inline-block;
+/*CSS reset settings here*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper {
+    width: 940px;
+    background-color: @container_background_color;
+    margin: 0px auto;
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    #logo {
+        min-height: 130px;
+        width: 260px;
+        background-color: #b97a57;
+        display: @inblock;
+        margin-right: 20px;
+        margin-bottom: @margin_bottom;
+    }
+    #navigation {
+        min-height: 130px;
+        width: 655px;
+        background-color: #ff7f27;
+        display: @inblock;
+        margin-bottom: @margin_bottom;
+    }
+    #main_content {
+        min-height: 250px;
+        width: 860px;
+        background-color: #880015;
+        padding: 40px;
+        margin-bottom: @margin_bottom;
+        #about {
+            min-height: 250px;
+            width: 650px;
+            background-color: #ffaec9;
+            display: @inblock;
+            margin-right: 40px;
+        }
+        #advertisement {
+            min-height: 200px;
+            width: 155px;
+            background-color: #c8bfe7;
+            display: @inblock;
+            vertical-align: top;
+        }
+    }
+    .sponsors {
+        min-height: 65px;
+        width: 310px;
+        background-color: #ffff88;
+        display: @inblock;
+    }
+}
