@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #2e2e2e;
+}
+
+    header {
+        background-color: #8892bf;
+    }
+
+        header nav, header .searchBar, header nav ul, header nav ul li {
+            display: inline-block;
+        }
+        
+            header nav {
+                padding: 0 60px;
+            }
+
+                header nav img {
+                    width: 50px;
+                    vertical-align: middle;
+                }
+
+                    header nav ul {
+                        vertical-align: middle;
+                        margin: 0 15px 0 30px;
+                    }
+
+                        header nav ul li {
+                            padding: 13px;
+                            font-weight: 700;
+                        }
+
+                        header nav ul .activeMenu {
+                            background-color: #4e5a92;
+                        }
+
+                            header nav ul li a {
+                                text-decoration: none;
+                                color: #dedede;
+                            }
+
+            header .searchBar {
+                margin-left: 285px;
+            }
+
+            header .searchBar input {
+                width: 245px;
+                border: none;
+                padding: 2px 5px;
+                outline: none;
+            }  
+
+    main article {
+        display: inline-block;
+    }
+
+    main article {
+        width: 1010px;
+    }
+
+        main article .manual {
+            margin: 15px 0 20px 60px;
+            color: #dedede;
+            font-size: 15px;
+        }
+
+            main article .manual span {
+                margin: 0px 10px;
+                font-size: 12px;
+            }
+        
+        main article .tutorial {
+            background-color: #f2f2f2;
+            margin-left: 40px;
+            padding: 0 20px 0 20px;
+        }
+
+            main article .tutorial .title h1, main article .tutorial .title .language {
+                display: inline-block;
+            }
+
+            main article .tutorial .title {
+                border-bottom: 1px dotted #000;
+                padding: 20px 0 10px 0;
+            }
+
+                main article .tutorial .title h1 {
+                    margin-right: 450px;
+                    font-size: 28px;
+                    vertical-align: bottom;
+                }
+
+                main article .tutorial .title .language {
+                    margin-bottom: 70px;
+                }
+
+                main article .tutorial .title .language select {
+                    width: 120px;
+                }
+
+                main article .tutorial .title .language a {
+                    font-size: 11px;
+                    margin-left: 2px;
+                    text-decoration: none;
+                }
+
+                main article .tutorial .title .language .pullRequest {
+                    margin-left: 65px;
+                    margin-right: 10px;
+                }
+
+            main article .tutorial .tableOfContent, main article .tutorial .description .notes {
+                margin-top: 30px;
+                border-bottom: 1px dotted #000;
+                padding-bottom: 10px;
+            }
+
+            main article .tutorial .description {
+                margin-top: 30px;
+                padding-bottom: 10px;
+            }
+
+                main article .tutorial .description ul {
+                    padding-left: 20px;
+                }
+
+                    main article .tutorial .description ul li {
+                        padding-bottom: 5px;
+                    }
+
+                        main article .tutorial .description ul li a {
+                            text-decoration: none;
+                            border-bottom: 1px solid #047cea;
+                            color: #047cea;
+                        }
+
+                main article .tutorial .description p {
+                    margin: 25px 0;
+                    font-size: 14.5px;
+                    line-height: 1.5;
+                }
+
+                    main article .tutorial .description p .whatPhp {
+                        text-decoration: none;
+                        border-bottom: 1px solid #047cea;
+                        color: #047cea;
+                    }
+
+                main article .tutorial .description .notes h3, main article .tutorial .description .notes a {
+                    display: inline-block;
+                }
+
+                main article .tutorial .description .notes h3 {
+                    margin-right: 610px;
+                    color: #8b5078;
+                }
+
+                main article .tutorial .description .notes a {
+                    text-decoration: none;
+                    border-bottom: 1px solid #047cea;
+                    font-size: 12px;
+                    color: #047cea;
+                }
+
+                    main article .tutorial .description .notes a img {
+                        vertical-align: baseline;
+                        margin-right: 3px;
+                        height: 13px;
+                    }
+
+                main article .tutorial .description #userContributed {
+                    padding-bottom: 20px;
+                }
+
+    main aside {
+        width: 280px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px 20px;
+        color: #dedede;
+    }
+
+        main aside a {
+            color: #dedede;
+            font-size: 11px;
+            text-decoration: none;
+        }
+
+        main aside .whatCanPhpDo {
+            margin-right: 20px;
+        }
+
+        main aside h4 {
+            margin-top: 35px;
+            margin-bottom: 18px;
+            font-size: 18px;
+            border-bottom: 1px dotted #dedede;
+            padding-bottom: 4px;
+        }
+
+        main aside .anchorIntroduction, main aside .anchorActive {
+            display: block;
+            margin-bottom: 10px;
+            border-bottom: 1px dotted #dedede;
+            padding-bottom: 4px;
+            font-size: 14px;
+        }
+
+        main aside .anchorIntroduction {
+            padding-left: 10px;
+        }
+
+        main aside .anchorActive {
+            color: #ae4e80;
+            border-bottom: 1px dotted #ae4e80;
+        }
+    
+    footer ul {
+        padding: 55px 0 18px 70px;
+    }
+
+        footer ul li {
+            margin-right: 20px;
+        }
+
+        footer ul li, footer ul li a {
+            display: inline-block;
+            color: #dedede;
+            font-size: 14px;
+        }
+
+            footer ul li a {
+                text-decoration: none;
+            }

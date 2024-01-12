@@ -2,26 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="This is my version of PHP Documentation using HTML and CSS" />
+    <meta name="description" content="This is my clone of PHP Documentation using HTML and CSS" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="images" alt="Php logo">
-            <ul>
-                <li>Downloads</li>
-                <li>Documentation</li>
-                <li>Get Involved</li>
-                <li>Help</li>
-            </ul>
-            <img src="images" alt="Php8 logo">
-            <form action="">
-                <input type="text" placeholder="Search">
+            <nav>
+                <a href="#"><img src="images/logo_php.svg" alt="Php logo" /></a>
+                <ul>
+                    <li><a href="#">Downloads</a></li>
+                    <li class="activeMenu"><a href="#">Documentation</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <a href="#"><img src="images/logo_php8.svg" alt="Php8 logo" /></a>
+            </nav>
+            <form action="" class="searchBar">
+                <label>
+                    <input type="text" placeholder="Search" />
+                </label>
             </form>
         </header>
-        <main></main>
+        <main>
+            <article class="content">
+                <p class="manual">PHP Manual <span>&gt;</span> Getting Started</p>
+                <section class="tutorial">
+                    <div class="title">
+                        <h1>A simple tutorial</h1>
+                        <div class="language">
+                            <p>Change language: 
+                                <select>
+                                    <option value="english">English</option>
+                                    <option value="tagalog">Tagalog</option>
+                                </select>
+                            </p>
+                            <a href="#" class="pullRequest">Submit a Pull Request</a>
+                            <a href="#">Report a Bug</a>
+                        </div>
+                    </div>
+                    <h2 class="tableOfContent">Table of contents</h2>
+                    <div class="description">
+                        <ul>
+                            <li><a href="#">What do I need?</a></li>
+                            <li><a href="#">Your first PHP-enabled page</a></li>
+                            <li><a href="#">Something Useful</a></li>
+                            <li><a href="#">Dealing with Forms</a></li>
+                            <li><a href="#">What's next?</a></li>
+                        </ul>
+                        <p>Here we would like to show the very basics of PHP in a short, simple tutorial. This text only deals with dynamic web page creation with PHP, though PHP is not only capable of creating web pages. See the section titled <a href="#" class="whatPhp">What can PHP do</a> for more information.</p>
+                        <p>PHP-enabled web pages are treated just like regular HTML pages and you can create and edit them the same way you normally create regular HTML pages.</p>
+                        <div class="notes">
+                            <h3>User Contributed Notes</h3>
+                            <a href="#"><img src="images/add.png" alt="Plus icon">add a note</a>
+                        </div>
+                        <p id="userContributed">There are no user contributed notes for this page.</p>
+                    </div>
+                </section>
+            </article>
+            <aside>
+                <a href="#" class="whatCanPhpDo">&lt;&lt; What can PHP do?</a>
+                <a href="#">What do I need? &gt;&gt;</a>
+                <h4>Getting Started</h4>
+                <a href="#" class="anchorIntroduction">Introduction</a>
+                <a href="#" class="anchorActive">&gt;&gt; A simple tutorial</a>
+            </aside>
+        </main>
+        <footer>
+            <ul>
+                <li>Copyright &copy; 2001-2021 The PHP Group</li>
+                <li><a href="#">My PHP.net</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Other PHP.net sites</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">View Source</a></li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>

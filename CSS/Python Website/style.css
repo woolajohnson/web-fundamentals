@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    background-color: #1f4260;
+    margin: 0 auto;
+}
+
+    header {
+        padding: 2em;
+    }
+
+        header section .logo, header section .searchBox, header section .searchBox form {
+            display: inline-block;
+        }
+
+        header section .logo {
+            vertical-align: middle;
+            margin-right: 310px;
+        }
+
+        header section .searchBox .donate {
+            padding: .5em .8em;
+            border-radius: .4em;
+            border: none;
+            outline: none;
+            background-color: #ffd64e;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        header section .searchBox form {
+            background-color: #1e2933;
+            outline: 1px solid #101010;
+            height: 4rem;
+            border-radius: 5px;
+            padding-left: 1em;
+        }
+
+            header section .searchBox form input {
+                padding: .7em;
+                border: none;
+                outline: none;
+                vertical-align: middle;
+            }
+
+            header section .searchBox form input[type=submit] {
+                background-color: #306593;
+                color: #fff;
+                margin-right: 5px;
+                margin-left: 5px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            header section .searchBox a {
+                border-left: 2px solid #101010;
+                height: 100%;
+                color: #aaafc5;
+                text-decoration: none;
+                vertical-align: middle;
+                display: inline-block;
+                padding: 1.5em 1em 0 1em;
+            }
+
+    nav {
+        height: 50px;
+        background-color: #3470a1;
+        border-radius: 0.5em;
+        margin-top: 10px;
+    }
+
+        nav ul {
+           height: 100%;
+           margin: 0 100px 0 110px;
+        }
+            
+            nav ul li {
+                height: 100%;
+                display: inline-block;
+                border-right: 1.5px solid #326793;
+                padding: .8em 1em;
+            }
+
+                nav ul li a {
+                    text-decoration: none;
+                    color: #e0e2eb;
+                    font-size: 1.1rem;
+                }
+
+                nav ul .active {
+                    border: none;
+                    background-color: #2b5b83;
+                }
+
+    main {
+        padding-left: 7em;
+        height: 270px;
+    }
+
+        main section, main img {
+            display: inline-block;
+        }
+
+        main section {
+            width: 40%;
+            vertical-align: top;
+        }
+
+        main section ul {
+            margin-bottom: 15px;
+        }
+
+            main section ul li {
+                list-style: none;
+                color: #ffd343;
+                font-size: 1.7rem;
+                font-weight: 900;
+            }
+
+            main section p {
+                color: #e0e2eb;
+                max-width: 45ch;
+                line-height: 1.5;
+                font-size: 1.1rem;
+            }
+
+        main img {
+            height: 340px;
+            position: relative;
+            bottom: 30px;
+        }
+
+    .pythonLinks {
+        height: 300px;
+        background-color: #f9f9f9;
+    }
+
+        .pythonLinks .news , .pythonLinks .usePython {
+            display: inline-block;
+            padding: 1.3em;
+            border-top: 4px solid #82b0d7;
+        }
+
+        .pythonLinks .news {
+            margin: 16px 20px 0 30px;
+        }
+
+            .pythonLinks .news title a {
+                margin-right: 20px;
+            }
+
+        .pythonLinks .news ul li, .pythonLinks .usePython ul li {
+            list-style: none;
+            border-top: 1px solid #b1b3b4;
+            padding: 10px 0 ;
+        }
+
+        .pythonLinks .news ul li, .pythonLinks .usePython ul li {
+            padding: 9px 9px 9px 0;
+            font-size: 0.9rem;
+        }
+
+            .pythonLinks .news ul li a {
+                margin-left: 30px;
+            }
+
+        .pythonLinks a {
+            text-decoration: none;
+            color: #3470a1;
+        }
+
+        .pythonLinks p {
+            font-size: 1.4rem;
+            color: #5a534b;
+            margin-right: 200px;
+        }
+
+        .pythonLinks p, .pythonLinks .moreFirst, .pythonLinks .moreSecond {
+            display: inline-block;
+        }
+
+        .pythonLinks .usePython ul li {
+            font-weight: bold;
+        }
+
+        .pythonLinks .usePython ul .usePythonFinal {
+            border-bottom: 1px solid #b1b3b4;
+        }
+
+            .pythonLinks .usePython ul li span {
+                padding: 2px 3px;
+                background-color: #e7e8e8;
+                border-bottom: 1px solid #b1b3b4;
+                font-weight: 500;
+                font-size: 0.8rem;
+                color: #b1b3b4;
+            }
+
+            .pythonLinks .moreFirst, .pythonLinks .moreSecond {
+                color: #b1b3b4;
+                font-size: 0.9rem;
+            }
+
+            .pythonLinks .title {
+                margin-bottom: 8px;
+            }
+
+            .pythonLinks .moreFirst {
+                margin-left: 115px;
+            }
+
+            .pythonLinks .moreSecond {
+                margin-left: 27px;
+            }
+
+    footer {
+        color: #88b3d6;
+        padding-bottom: 3.44em;
+    }
+
+        footer ul {
+            text-align: center;
+        }
+
+        footer .footerFirst {
+            margin-top: 25px;
+            position: relative;
+        }
+
+        footer .footerSecond {
+            margin-top: 23px;
+        }
+
+            footer ul li {
+                display: inline-block;
+            }
+
+            footer .footerFirst .greenStatus {
+                position: absolute;
+                content: "";
+                height: 12px;
+                width: 12px;
+                top: 2.5px;
+                margin-left: 6px;
+                border-radius: 50%;
+                background-color: #008000;
+            }
+
+            footer .footerFirst li {
+                margin-right: 20px;
+            }
+
+            footer .footerSecond li {
+                margin-right: 5px;
+                font-size: 0.65rem;
+            }
+
+                footer .footerSecond li a {
+                    border-bottom: 1px dashed #88b3d6;
+                }
+
+                footer ul li a {
+                    color: #88b3d6;
+                    text-decoration: none;
+                }
