@@ -14,7 +14,9 @@
         <script>
             $(document).ready(function () {
                 $("img").click(function () {
+                    let sourceDefault = "images/question mark.png";
                     let path = $(this).attr("data-alt-src");
+                    $("img").attr("src", sourceDefault);
                     $(this).attr("src", path);
                 });
             });
