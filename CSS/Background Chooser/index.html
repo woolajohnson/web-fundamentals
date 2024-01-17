@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="My assignment of Background Chooser"
+        />
+        <title>Background Chooser</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#main_box").click(function () {
+                    $(".mini_boxes").removeClass("border_color");
+                    $(this).css("background-image", "none");
+                });
+                $(".mini_boxes").click(function (event) {
+                    event.stopPropagation();
+                    let source = $(this).attr("src");
+                    $(".mini_boxes").removeClass("border_color");
+                    $(this).addClass("border_color");
+                    $(this)
+                        .parent()
+                        .css("background-image", 'url("' + source + '")');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Background Chooser</h1>
+        <div id="main_box">
+            <img src="images/bg-80.gif" class="mini_boxes" />
+            <img src="images/bg-75.gif" class="mini_boxes" />
+            <img src="images/bg-77.gif" class="mini_boxes" />
+            <img src="images/bg-85.gif" class="mini_boxes" />
+        </div>
+    </body>
+</html>
