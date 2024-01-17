@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url("images/background.jpg") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+section {
+    position: relative;
+    width: 38rem;
+    height: 38rem;
+    border-radius: 1em;
+    background-color: #3e104980;
+    padding: 1.2rem;
+    margin: 5rem auto;
+    margin-right: 10rem;
+    text-align: left;
+    vertical-align: middle;
+    img {
+        width: 8.7rem;
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+button {
+    position: absolute;
+    bottom: -4.5em;
+    left: 38%;
+    padding: 1rem 2rem;
+    background-color: #9900ff;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 0.3em;
+    cursor: pointer;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="My version of Candy Crush Game" />
+        <title>Candy Crush</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("img").click(function () {
+                    $(this).fadeOut();
+                });
+                $("button").click(function () {
+                    $("img").show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <main>
+            <section>
+                <img
+                    src="images/multicolor_candy.png"
+                    alt="Multi color candy"
+                />
+                <img
+                    src="images/multicolor_candy.png"
+                    alt="Multi color candy"
+                />
+                <img
+                    src="images/multicolor_candy.png"
+                    alt="Multi color candy"
+                />
+                <img src="images/orange_candy.png" alt="Orange candy" />
+                <img src="images/orange_candy.png" alt="Orange candy" />
+                <img src="images/orange_candy.png" alt="Orange candy" />
+                <img src="images/red_candy.png" alt="Red candy" />
+                <img src="images/red_candy.png" alt="Red candy" />
+                <img src="images/red_candy.png" alt="Red candy" />
+                <img src="images/yellow_candy.png" alt="Yellow candy" />
+                <img src="images/yellow_candy.png" alt="Yellow candy" />
+                <img src="images/yellow_candy.png" alt="Yellow candy" />
+                <button>Reset Game</button>
+            </section>
+        </main>
+    </body>
+</html>
