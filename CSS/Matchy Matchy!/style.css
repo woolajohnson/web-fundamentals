@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    width: 40rem;
+    margin: 3rem auto;
+    outline: 1px solid #0aa98a;
+    text-align: center;
+    padding: 1rem;
+    img {
+        width: 9rem;
+        height: 9rem;
+        object-fit: cover;
+        cursor: pointer;
+    }
+}

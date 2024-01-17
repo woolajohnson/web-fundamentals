@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    width: 50rem;
+    margin: 1rem auto;
+    text-align: center;
+    padding: 1rem;
+    p {
+        margin-bottom: 2em;
+        span {
+            font-weight: bold;
+        }
+    }
+    img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="My version of Matchy Matchy Game" />
+        <title>Matchy Matchy!</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("img").click(function () {
+                    let path = $(this).attr("data-alt-src");
+                    $(this).attr("src", path);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <main>
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/blast.jpg"
+                alt="blast"
+            />
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/sonic.jpg"
+                alt="sonic"
+            />
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/saitama.jpg"
+                alt="saitama"
+            />
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/genos.jpg"
+                alt="genos"
+            />
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/king.jpg"
+                alt="king"
+            />
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/sonic.jpg"
+                alt="sonic"
+            />
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/mumen.jpg"
+                alt="mumen"
+            />
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/blast.jpg"
+                alt="blast"
+            />
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/mumen.jpg"
+                alt="mumen"
+            />
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/saitama.jpg"
+                alt="saitama"
+            />
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/king.jpg"
+                alt="king"
+            />
+            <img
+                src="images/question mark.png"
+                data-alt-src="images/genos.jpg"
+                alt="genos"
+            />
+        </main>
+    </body>
+</html>
