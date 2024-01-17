@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    cursor: pointer;
+    padding: 0.6em 1.5em;
+    border-radius: 0.5em;
+    background-color: #2f3147;
+    border: none;
+    color: yellow;
+    font-size: 1.6rem;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    aside {
+        min-width: 250px;
+        display: inline-block;
+        padding: 2em 0 2em 4em;
+        height: 100vh;
+        position: fixed;
+        background-color: #2f3147;
+        vertical-align: top;
+        li {
+            list-style: none;
+            font-size: 1.2rem;
+            margin-top: 0.8rem;
+            a {
+                color: #c1c1c1;
+            }
+        }
+    }
+    main {
+        text-align: center;
+        margin-left: 250px;
+        min-width: 750px;
+        display: inline-block;
+        background-color: #c1c1c1;
+        padding: 2em;
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 5rem;
+            color: #2f3147;
+        }
+        div {
+            border-top: 1px solid #000;
+            padding: 3em 0;
+            h2 {
+                margin: 0 0 5rem 0;
+                font-size: 2.5rem;
+                color: #2f3147;
+            }
+            p {
+                font-size: 2rem;
+                margin-top: 2rem;
+            }
+        }
+        .hide_text {
+            display: none;
+        }
+        .change_color {
+            color: blue;
+        }
+        #attr img {
+            border: 1px solid #000;
+            text-align: center;
+            width: 150px;
+            display: block;
+            margin: 3rem auto 1rem auto;
+            padding: 0.8em;
+        }
+        #val label {
+            margin: 3rem auto 1rem auto;
+            display: block;
+            font-size: 1.3rem;
+            input {
+                padding: 0.5em;
+                outline: none;
+            }
+        }
+    }
+}
