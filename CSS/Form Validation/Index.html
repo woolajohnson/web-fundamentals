@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="My Form Validation App" />
+        <title>Form Validation</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(function () {
+                    $("#datepicker").datepicker();
+                });
+                if (
+                    $("#form").submit(function () {
+                        let firstName = $("#firstName").val();
+                        let lastName = $("#lastName").val();
+                        let age = $("#age").val();
+                        let date = $("#datepicker").val();
+
+                        if (firstName == "") {
+                            alert("First Name can't be blank!");
+                        } else if (lastName == "") {
+                            alert("Last Name can't be blank!");
+                        } else if (isNaN(age)) {
+                            alert("Please enter a valid Age!");
+                        } else if (age == "") {
+                            alert("Age can't be blank!");
+                        } else if (date == "") {
+                            alert("Please choose a date schedule!");
+                        } else if (Date.parse(date) < new Date()) {
+                            alert("Please choose a valid date schedule!");
+                        } else {
+                            alert(
+                                "Success, " +
+                                    firstName +
+                                    " " +
+                                    lastName +
+                                    "! Your vaccination is reserved on  " +
+                                    date +
+                                    " ."
+                            );
+                        }
+                    })
+                );
+            });
+        </script>
+    </head>
+    <body>
+        <main>
+            <h1>Scheduling Form for Vaccination</h1>
+            <form id="form" action="#" method="#">
+                <label>
+                    First Name
+                    <input type="text" id="firstName" />
+                </label>
+                <label>
+                    Last Name
+                    <input type="text" id="lastName" />
+                </label>
+                <label>
+                    Age
+                    <input type="text" id="age" />
+                </label>
+                <p>Preferred Date <input type="text" id="datepicker" /></p>
+                <input class="submit" type="submit" value="Reserve" />
+            </form>
+        </main>
+    </body>
+</html>
